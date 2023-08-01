@@ -7,6 +7,23 @@ const people = [
   { name: 'susy', age: 30, position: 'the boss' },
   { name: 'anna', age: 35, position: 'intern' },
 ];
+
+const peopleBox = document.querySelector("#people-box");
+
+people.map(person=>{
+  //  let newParagraph = document.createElement('p')
+  // let text = document.createTextNode(`name: ${person.name} | age: ${person.age}`)
+  // newParagraph.appendChild(text)
+  // peopleBox.appendChild(newParagraph)
+
+  console.log(person)
+  peopleBox.innerHTML = `
+  <p>name: ${person.name}</p>  
+  <hr>
+  `
+})
+
+
 // filter
 const youngPeople = people.filter((person) => {
   // if (person.age < 30) {
@@ -15,6 +32,8 @@ const youngPeople = people.filter((person) => {
   return person.age <= 25;
 });
 console.log(youngPeople);
+
+
 
 const developers = people.filter((person) => person.position === 'developer');
 console.log(developers);

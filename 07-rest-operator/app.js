@@ -30,7 +30,7 @@ const getAverage = (name, ...scores) => {
   console.log(average);
 };
 
-// getAverage(person.name,67,78,89,78)
+getAverage(person.name,67,78,89,78)
 
 const testScores = [67, 78, 99, 100];
 

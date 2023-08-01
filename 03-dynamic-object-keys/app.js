@@ -11,3 +11,5 @@ const newPerson = person.map(function (item) {
   return item;
 });
 console.log(newPerson);
+
+
